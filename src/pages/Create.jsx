@@ -6,6 +6,8 @@ const Create = () => {
 
     const formik=useFormik(
         {
+            /*Creacion de un esquema, ademas 
+            de mostrar los valores de las casillas del formulario*/
             initialValues:{
                 titulo:'',descripcion:'',categoria:'',equipo:'',link:''},
                 validationSchema: Yup.object({
@@ -43,6 +45,7 @@ const Create = () => {
                 onBlur={formik.handleBlur}
                 />
                 {
+                    //Validacion para mostrar los errores si se toca la casilla
                 formik.touched.titulo && formik.errors.titulo ?
                 <div>{formik.errors.titulo}</div>:null
                 }
@@ -57,6 +60,7 @@ const Create = () => {
                 onBlur={formik.handleBlur}
                 />
                 {
+                    //Validacion para mostrar los errores si se toca la casilla
                 formik.touched.descripcion && formik.errors.descripcion ?
                 <div>{formik.errors.descripcion}</div>:null
                 }
@@ -73,6 +77,8 @@ const Create = () => {
                     <option value="Motor">Deporte de motor</option>
                 </select>
                 {
+                    /*Validacion para mostrar los errores si 
+                    no se selecciona una categoria del select*/
                 formik.touched.categoria && formik.errors.categoria ?
                 <div>{formik.errors.categoria}</div>:null
                 }
@@ -87,6 +93,7 @@ const Create = () => {
                 onBlur={formik.handleBlur}
                 />
                 {
+                    //Validacion para mostrar los errores si se toca la casilla
                 formik.touched.equipo && formik.errors.equipo ?
                 <div>{formik.errors.equipo}</div>:null
                 }
@@ -101,6 +108,7 @@ const Create = () => {
                 onBlur={formik.handleBlur}
                 />
                 {
+                    //Validacion para mostrar los errores si se toca la casilla
                 formik.touched.link && formik.errors.link ?
                 <div>{formik.errors.link}</div>:null
                 }
