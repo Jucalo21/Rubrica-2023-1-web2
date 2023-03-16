@@ -3,14 +3,16 @@ import "./Cards.css";
 
 const Cards = (props) => {
 return (
-    <div className='card'>
-        <h className='titulo'>{props.titulo}</h>
+    <div className='card-container'>
+        <div className="card">
+        <h2>{props.titulo}</h2>
         <img src={props.imagen} alt={props.titulo}/>
-        <h>Categoria: {props.categoria}</h>
+        <h4>Categoria: {props.categoria}</h4>
         <p>Juego entre dos equipos de once jugadores cada uno, cuyo objetivo es hacer entrar en 
         la portería contraria un balón que no puede ser tocado con las manos ni con los brazos
         , salvo por el portero en su área de meta.</p>
         <a href="https://app.juniorfc.co/">equipo</a>
+        </div>
     </div>
 )
 }

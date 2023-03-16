@@ -5,8 +5,8 @@ import Content from './pages/Content'
 import Create from "./pages/Create";
 
 function App() {
-  const [content, setContent] = useState(false)
-  const [create, setCreate] = useState(true)
+  const [content, setContent] = useState(true)
+  const [create, setCreate] = useState(false)
 
   return (
     <div className="container">
@@ -14,7 +14,7 @@ function App() {
         <Navbar setContent={setContent} setCreate={setCreate}/>
       </header>
       {
-        create ? <Create/> : <Content/>
+        content ? <Content/> : <Create/>
       }
     </div>
   )
