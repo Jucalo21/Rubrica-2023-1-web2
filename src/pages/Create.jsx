@@ -3,6 +3,15 @@ import { useFormik} from 'formik'
 import * as Yup from 'yup'
 
 const Create = () => {
+    const {lista}=useContext(Contexto)
+
+    const users=[
+        {titulo:'dasd',descripcion:'sda',categoria:'das',equipo:'ads',link:'das'}
+    ]
+    useEffect(() => {
+        setLista(users)
+    }, [])
+    
 
     const formik=useFormik(
         {
@@ -11,6 +20,7 @@ const Create = () => {
             initialValues:{
                 titulo:'',descripcion:'',categoria:'',equipo:'',link:''},
                 validationSchema: Yup.object({
+                    //Creacion de las validaciones para cada casilla
                     titulo:Yup.string().required('Ingrese el titulo del deporte')
                     .max(20,'Maximo 20 caracteres')
                     .min(3,'Minimo 3 caracteres'),
