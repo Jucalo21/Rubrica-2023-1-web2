@@ -50,13 +50,16 @@ const datos = [
     },
 ];
 
+
 const Content = () => {
     const [ArrayFiltrado, setArrayFiltrado] = useState([])
     const [filtrado, setFiltrado] = useState(false)
     
+    //Funcion para seleccionar la categoria de los deportes
     const SeleccionarCategoria=(e)=>{
     const seleccionar=e.target.value;
     
+    //Funcion para filtrar los deportes
     if (seleccionar!=='Todos') {
         setFiltrado(true)
         const ListaFiltrada=datos.filter((elemento)=>elemento.categoria===seleccionar)
@@ -65,6 +68,7 @@ const Content = () => {
     }
     setFiltrado(false)
 }
+
 return (
     <div>
         <div className="filtro" onChange={SeleccionarCategoria}>
@@ -76,6 +80,7 @@ return (
         </select>
     </div>
 {
+    //Map del filtrado de los deportes
     filtrado?(
     ArrayFiltrado.map((equipo,index)=>(
         <Cards
@@ -86,6 +91,7 @@ return (
         />
     ))
     ):
+    //Map con todos los datos
     datos.map((equipo,index)=>(
         <Cards
         key={index}

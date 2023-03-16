@@ -2,6 +2,7 @@ import React from 'react'
 import "./Cards.css";
 
 const Cards = (props) => {
+    //Plantilla para crear las cards
 return (
     <div className='card-container'>
         <div className="card">
