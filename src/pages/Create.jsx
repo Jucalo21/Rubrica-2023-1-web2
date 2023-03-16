@@ -7,7 +7,7 @@ const Create = () => {
     const formik=useFormik(
         {
             /*Creacion de un esquema, ademas 
-            de mostrar los valores de las casillas del formulario*/
+            de recibir los valores de las casillas del formulario*/
             initialValues:{
                 titulo:'',descripcion:'',categoria:'',equipo:'',link:''},
                 validationSchema: Yup.object({

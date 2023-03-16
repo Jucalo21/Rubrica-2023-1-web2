@@ -1,3 +1,15 @@
+footer{
+    border: 1px solid rgb(204, 196, 196);
+    background-color: #ffffff;
+}
+
+.icono{
+    max-height: 50px;
+    max-width: 50px;
+    margin-left: 47%;
+    display: flex;
+}
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
