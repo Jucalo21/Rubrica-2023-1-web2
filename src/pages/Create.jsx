@@ -3,14 +3,10 @@ import { useFormik} from 'formik'
 import * as Yup from 'yup'
 
 const Create = () => {
-    const {lista}=useContext(Contexto)
-
     const users=[
         {titulo:'dasd',descripcion:'sda',categoria:'das',equipo:'ads',link:'das'}
     ]
-    useEffect(() => {
-        setLista(users)
-    }, [])
+
     
 
     const formik=useFormik(
