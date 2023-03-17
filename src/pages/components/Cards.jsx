@@ -12,7 +12,7 @@ return (
         <p>Juego entre dos equipos de once jugadores cada uno, cuyo objetivo es hacer entrar en 
         la portería contraria un balón que no puede ser tocado con las manos ni con los brazos
         , salvo por el portero en su área de meta.</p>
-        <a href="https://app.juniorfc.co/">{props.equipo}</a>
+        <a href={props.link}>{props.equipo}</a>
         </div>
     </div>
 )

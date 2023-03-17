@@ -16,7 +16,7 @@ const Content = () => {
             categoria: "Equipo",
             equipo:"Equipo 1",
             texto:"",
-            link:""
+            link:"https://app.juniorfc.co/"
         },
         {
             titulo: "Baloncesto",
@@ -24,7 +24,7 @@ const Content = () => {
             categoria: "Equipo",
             equipo:"Equipo 1",
             texto:"",
-            link:"" 
+            link:"https://app.juniorfc.co/" 
         },
         {
             titulo: "Formula 1",
@@ -32,7 +32,7 @@ const Content = () => {
             categoria: "Motor",
             equipo:"Equipo 1",
             texto:"",
-            link:"" 
+            link:"https://app.juniorfc.co/" 
         },
         {
             titulo: "Motocross",
@@ -40,7 +40,7 @@ const Content = () => {
             categoria: "Motor",
             equipo:"Equipo 1",
             texto:"",
-            link:"" 
+            link:"https://app.juniorfc.co/" 
         },
         {
             titulo: "Volleyball",
@@ -48,7 +48,7 @@ const Content = () => {
             categoria: "Equipo",
             equipo:"Equipo 1",
             texto:"",
-            link:"" 
+            link:"https://app.juniorfc.co/" 
         },
         {
             titulo: "Karting",
@@ -56,7 +56,7 @@ const Content = () => {
             categoria: "Motor",
             equipo:"Equipo 1",
             texto:"",
-            link:"" 
+            link:"https://app.juniorfc.co/" 
         },
         {
             titulo: "Ajedrez",
@@ -64,7 +64,7 @@ const Content = () => {
             categoria: "Mesa",
             equipo:"Equipo 1",
             texto:"",
-            link:"" 
+            link:"https://app.juniorfc.co/" 
         },
         {
             titulo: "Scrabble",
@@ -72,7 +72,7 @@ const Content = () => {
             categoria: "Mesa",
             equipo:"Equipo 1",
             texto:"",
-            link:"" 
+            link:"https://app.juniorfc.co/" 
         },
         {
             titulo: "Juegos De Cartas",
@@ -80,7 +80,7 @@ const Content = () => {
             categoria: "Mesa",
             equipo:"Equipo 1",
             texto:"",
-            link:"" 
+            link:"https://app.juniorfc.co/" 
         }
     ];
 
@@ -133,6 +133,7 @@ return (
         imagen={equipo.imagen}
         categoria={equipo.categoria}
         equipo={equipo.equipo}
+        link={equipo.link}
         />
     ))
     }
