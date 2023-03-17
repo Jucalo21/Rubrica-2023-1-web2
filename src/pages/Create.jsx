@@ -1,13 +1,10 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useFormik} from 'formik'
 import * as Yup from 'yup'
+import { Contexto } from './Contexto/Contexto'
 
 const Create = () => {
-    const users=[
-        {titulo:'dasd',descripcion:'sda',categoria:'das',equipo:'ads',link:'das'}
-    ]
-
-    
+    const {list,setList} = useContext(Contexto)
 
     const formik=useFormik(
         {

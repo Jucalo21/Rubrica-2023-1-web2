@@ -4,12 +4,14 @@ import Navbar from './pages/Navbar'
 import Content from './pages/Content'
 import Create from "./pages/Create"
 import './pages/components/Cards.css'
+import {Provider} from "./pages/Contexto/Contexto"
 
 function App() {
   const [content, setContent] = useState(true)
   const [create, setCreate] = useState(false)
 
   return (
+    <Provider>
     <div className="container">
       <header>
         <Navbar setContent={setContent} setCreate={setCreate}/>
@@ -37,15 +39,16 @@ function App() {
         <img className='icono' src="https://png.pngtree.com/png-clipart/20180515/ourmid/pngtree-facebook-icon-png-image_3566125.png" alt="Icono facebook" />
         </a>
       <a href="https://twitter.com/Jukalo21">
-        <img className='icono' src="https://about.fb.com/es/wp-content/uploads/sites/13/2019/10/new-ig-icon-1.png" alt="Twitter" />
+        <img className='icono' src="https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/twitter_logo_blue.png.twimg.768.png" alt="Twitter" />
         </a>
       <a href="https://www.instagram.com/jucalo219/">
-        <img className='icono' src="https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/twitter_logo_blue.png.twimg.768.png" alt="Instagram" />
+        <img className='icono' src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
         </a>
     </ul>
   </div>
 </footer>
     </div>
+    </Provider>
   )
 }
 

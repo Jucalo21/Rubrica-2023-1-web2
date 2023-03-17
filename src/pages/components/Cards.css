@@ -5,9 +5,11 @@ footer{
 
 .icono{
     max-height: 50px;
+    min-height: 50px;
+    min-width: 50px;
     max-width: 50px;
-    margin-left: 47%;
-    display: flex;
+    margin-inline: 10px;
+    display: inline-block;
 }
 
 .card-container {
