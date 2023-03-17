@@ -24,11 +24,11 @@ const Create = () => {
                     categoria:Yup.string().required('Elija la categoria del deporte')
                     .oneOf(["Equipo","Mesa","Motor"],"Selecciona una de las opciones"),
                     equipo:Yup.string().required('Ingrese el equipo')
-                    .max(20,'Maximo 15 caracteres')
+                    .max(15,'Maximo 15 caracteres')
                     .min(3,'Minimo 3 caracteres'),
                     link:Yup.string().required('Ingrese el link a la pagina del equipo')
-                    .max(20,'Maximo 50 caracteres')
-                    .min(3,'Minimo 10 caracteres')
+                    .max(50,'Maximo 50 caracteres')
+                    .min(10,'Minimo 10 caracteres')
                 }),
                 onSubmit: values=>{
                 console.log(values)
