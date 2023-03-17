@@ -4,7 +4,7 @@ import Navbar from './pages/Navbar'
 import Content from './pages/Content'
 import Create from "./pages/Create"
 import './pages/components/Cards.css'
-import {Provider} from "./pages/Contexto/Contexto"
+import {Provider, Contexto} from "./pages/Contexto/Contexto"
 
 function App() {
   const [content, setContent] = useState(true)

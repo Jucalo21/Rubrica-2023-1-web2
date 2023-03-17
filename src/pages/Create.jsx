@@ -1,10 +1,11 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext} from 'react'
 import { useFormik} from 'formik'
 import * as Yup from 'yup'
 import { Contexto } from './Contexto/Contexto'
 
 const Create = () => {
-    const {list,setList} = useContext(Contexto)
+    const {lista,setLista} = useContext(Contexto)
+    const imagen="https://upload.wikimedia.org/wikipedia/commons/c/c6/Tablero_de_ScrabbleIMG_20201008_175354.jpg"
 
     const formik=useFormik(
         {
@@ -31,6 +32,11 @@ const Create = () => {
                 }),
                 onSubmit: values=>{
                 console.log(values)
+                setLista([
+                    ...lista,values
+                ])
+                console.log(lista);
+
             }
         }
     )

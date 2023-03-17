@@ -12,36 +12,37 @@ footer{
     display: inline-block;
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
+.card-list {
+    display: inline-block;
     justify-content: center;
+    margin: 80px;
+    max-width: 100px;
+    min-width: 100px;
+    max-height: 50px;
+    min-height: 50px;
 }
 
 .card {
-    width: 300px;
-    margin: 20px;
+    width: 200px;
+    height: 470px;
+    margin-left: -100px;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover{
+    background-color: rgb(7, 208, 243);
 }
 
 .card img {
-    width: 100%;
+    max-width: 150px;
+    min-width: 150px;
+    max-height: 150px;
+    min-height: 150px;
     height: auto;
     border-radius: 4px;
     margin-bottom: 10px;
 }
 
-.card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.5;
-}
